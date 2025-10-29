@@ -47,13 +47,19 @@ DIN-5 MIDIコネクタ (メス)
 
 Wiring / 回路
 -
-The circuit is very simple. 非常にシンプルな回路で構成されています。
+## Wiring / 回路
 
+The circuit is very simple.
+非常にシンプルな回路で構成されています。
+
+```text
 MIDI DIN-5 Connector         Raspberry Pi Pico
 --------------------         -----------------
 Pin 5  ---[ 220Ω ]---        GP1 (UART1 RX)
 Pin 2  -----------------        GND
 Pin 4  (Not Connected)
+```
+
 Note: This is a simplified circuit that does not use an optocoupler as recommended by the official MIDI specification. However, it works fine with many MIDI devices.
 
 注意: これは公式のMIDI規格で推奨されているフォトカプラを使用した回路ではありませんが、多くのMIDI機器で問題なく動作する簡略化された回路です。
@@ -113,7 +119,7 @@ Connect the MIDI OUT from your MIDI keyboard or other device to the circuit. プ
 
 Connect the Pico to your PC via USB. PicoをPCにUSBで接続します。
 
-Launch your DAW software. A new MIDI input device named Keytar.1 should appear. Select it, and you're ready to go. DAWソフトウェアを起動すると、Keytar.1 という名前の新しいMIDI入力デバイスが表示されます。これを選択すればすぐに使用できます。
+Launch your DAW software. A new MIDI input device named pico should appear. Select it, and you're ready to go. DAWソフトウェアを起動すると、pico という名前の新しいMIDI入力デバイスが表示されます。これを選択すればすぐに使用できます。
 
 License / ライセンス
 -
