@@ -66,6 +66,10 @@ This is the easiest method and does not require you to compile the program yours
 
 プログラムを自分でコンパイルする必要がない、最も簡単な方法です。
 
+Navigate to the firmware directory in this repository. このリポジトリ内の firmware フォルダに移動します。
+
+Download the .uf2 file from that folder. フォルダの中にある.uf2ファイルをダウンロードします。
+
 Press and hold the BOOTSEL button on your Raspberry Pi Pico, then connect it to your PC with a USB cable. Raspberry Pi Picoの BOOTSEL ボタンを押したまま、PCにUSBケーブルで接続します。
 
 It will be recognized as a storage device named RPI-RP2. PCに RPI-RP2 という名前のストレージとして認識されます。
