@@ -4,14 +4,12 @@ A firmware to convert traditional 5-pin DIN MIDI input to USB MIDI using a Raspb
 
 Raspberry Pi Picoを使用して、従来の5ピンDIN MIDI入力をUSB MIDIに変換するファームウェアです。
 
-Overview / 概要
--
+## Overview / 概要
 This project allows you to connect devices with a DIN-5 MIDI output, such as MIDI keyboards and synthesizers, to a PC, Mac, or smartphone with a single USB cable. It runs on a Raspberry Pi Pico and is recognized as a class-compliant USB-MIDI device without any special drivers.
 
 このプロジェクトは、MIDIキーボードやシンセサイザーなどのDIN-5 MIDI出力を持つ機器を、USBケーブル1本でPCやMac、スマートフォンに接続できるようにするものです。Raspberry Pi Pico上で動作し、特別なドライバなしでクラスコンプライアントなUSB-MIDIデバイスとして認識されます。
 
-Features / 特徴
--
+## Features / 特徴
 Plug and Play: Recognized as a MIDI device just by connecting it to your PC.
 
 Low Latency: Achieves low-latency conversion by leveraging the performance of the Raspberry Pi Pico.
@@ -45,8 +43,6 @@ DIN-5 MIDIコネクタ (メス)
 
 ブレッドボードとジャンパーワイヤー
 
-Wiring / 回路
--
 ## Wiring / 回路
 
 The circuit is very simple.
@@ -64,8 +60,7 @@ Note: This is a simplified circuit that does not use an optocoupler as recommend
 
 注意: これは公式のMIDI規格で推奨されているフォトカプラを使用した回路ではありませんが、多くのMIDI機器で問題なく動作する簡略化された回路です。
 
-Installation / インストール方法
--
+## Installation / インストール方法
 1. Easy Way (Using the .uf2 file) / 簡単な方法 (.uf2ファイルを使用)
 This is the easiest method and does not require you to compile the program yourself.
 
@@ -111,8 +106,7 @@ Select Raspberry Pi Pico from Tools > Board.
 
 Connect your Pico to the PC, select the correct serial port, and press the "Upload" button.
 
-Usage / 使い方
--
+## Usage / 使い方
 Wire the circuit as shown in the diagram. 上記の回路図通りに配線します。
 
 Connect the MIDI OUT from your MIDI keyboard or other device to the circuit. プログラムを書き込んだPicoに、MIDIキーボードなどのMIDI OUTを接続します。
@@ -121,8 +115,7 @@ Connect the Pico to your PC via USB. PicoをPCにUSBで接続します。
 
 Launch your DAW software. A new MIDI input device named pico should appear. Select it, and you're ready to go. DAWソフトウェアを起動すると、pico という名前の新しいMIDI入力デバイスが表示されます。これを選択すればすぐに使用できます。
 
-License / ライセンス
--
+## License / ライセンス
 This project is released under the MIT License. See the LICENSE file for details.
 
 このプロジェクトは MITライセンス の下で公開されています。詳細は LICENSE ファイルをご覧ください。
